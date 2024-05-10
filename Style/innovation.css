@@ -1,0 +1,215 @@
+.feature-card-container{
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e000;
+    position: relative;
+    gap: 1%;
+    width: 90%;
+    margin: 1vh auto;
+    padding: 1vh 0;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80vw;
+    color: #333;
+}
+
+.feature-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 5%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    color:white;
+    font-size: 2rem;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000a3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    max-height: 90%;
+    min-height: 500px;
+}
+
+.feature-card img {
+    max-width: 100%;
+    max-height: 40%;
+    border-radius: 8px;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.feature-card-title{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.feature-card-description{
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.feature-card-btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 3%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    border-radius: 8px;
+}
+
+.app-mall {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh auto;
+    padding: 0;
+    width: 80vw;
+    background-color: #f5f5f500;
+    color: #333;
+}
+
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 5%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    color:white;
+    font-size: 2rem;
+}
+
+.app-title {
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.app-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #e0e0e021;
+    position: relative;
+    gap: 5%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    border-radius: 8px;
+}
+
+.apps-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00699d;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.apps-arrow:hover {
+    background-color: #0998b8;
+}
+
+.apps-arrow:active {
+    background-color: #08c8f3;
+}
+
+.left-arrow {
+    left: -20px;
+}
+
+.right-arrow {
+    right: -20px;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000a3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    max-height: 90%;
+    max-height: 90%;
+    height: 350px;
+}
+
+.app-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    max-height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.app-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-card-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.app-card-button:hover {
+    background-color: #19e420;
+    transform: scale(1.1);
+}
+
+.app-card-button:active {
+    background-color: #0998b8;
+    transform: scale(0.9);
+}

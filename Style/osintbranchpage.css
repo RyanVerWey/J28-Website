@@ -1,0 +1,13 @@
+.PicsOnRight {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5vh;
+
+}
+
+.OSINTButtons:hover {
+    transform: scale(1.2);
+}

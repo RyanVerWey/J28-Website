@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+}
+
+.row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max-w-70 {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap {
+    gap: 40px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.card {
+    font-family: sans-serif;
+    position: relative;
+    width: 350px;
+    height: 560px;
+    border-radius: 10px;
+    background: rgba(205, 226, 234, 0.328);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5vh;
+    overflow: hidden;
+    border-bottom: goldenrod;
+}
+
+.img-bx {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.img-bx img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: opacity 0.5s ease;
+}
+
+#email-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 2vh;
+}
+
+#email-text {
+    font-size: 1.2em;
+    margin: 0;
+    padding-left: 40px;
+    color: #dff4f3;
+}
+
+.emailbutton {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.pch3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.content .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.content .detail {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.content .detail span {
+    font-size: 0.8em;
+    color: #dff4f3;
+    font-weight: bold;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    margin-top: 1vh;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #e8f0f25b;
+    font-size: 1.5em;
+    color: #7e3737;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+    margin-right: 30px;
+}
+
+.sci li a:hover {
+    background: #03a9f4;
+    color: #fff;
+}
+
+.sci li a:active {
+    background-color: #084a68;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+.email-icon {
+    background: transparent;
+    color: white;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    filter: invert(1);
+}
+
+
+.emil-icon img {
+    max-width: 80%;
+    max-height: 80%;
+    display: block;
+    margin: auto;
+    fill: white;
+    filter: invert(1);
+}
+
+.mid-ul {
+    list-style-type: none;
+}
+
+.carousel {
+    /* Adjusted for width */
+    width: 80%;
+    height: calc(60vw * 2 / 6);
+    /* Height is now based on width to maintain 2:6 aspect ratio */
+    max-height: 70vh;
+    /* Ensures height does not exceed 70% of the viewport height */
+    position: relative;
+    /* Position relative to allow absolute positioning for children */
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    /* Center children horizontally */
+    align-items: center;
+    /* Center children vertically */
+    border-radius: 4%;
+}
+
+.carousel-sections-scroll,
+.carousel-sections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-sections-scroll {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% * 3);
+    /* Assuming 4 slides, adjust accordingly if more/less */
+    height: 100%;
+}
+
+.carousel-sections>div {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 24px;
+}
+
+.carousel-section {
+    width: calc(60% / 4);
+    /* Adjust the width based on the number of slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-cta {
+    position: absolute;
+    bottom: 10px;
+    /* Position button at 10px from the bottom of the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.2s, transform 0.1s;
+    z-index: 10;
+}
+
+.carousel-cta:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    /* Larger shadow on hover */
+}
+
+.carousel-cta:active {
+    translate: 1px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    /* Smaller shadow to simulate the button being pressed */
+}
+
+.prev-arrow,
+.next-arrow {
+    height: 60px;
+    min-height: 48px;
+    width: 60px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Update the background image size if necessary */
+.prev-arrow {
+    left: 8%;
+    background-image: url('./path-to-your-left-icon.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.next-arrow {
+    right: 8%;
+    background-image: url('./path-to-your-right-icon.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.carousel-dots {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #afafaf;
+    margin: 0px 4px;
+    transition: 100ms background-color ease-in;
+}
+
+.carousel-dot.active {
+    background-color: #5f5f5f;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .carousel {
+        width: 85vw;
+    }
+
+    .carousel-cta {
+        padding: 12px 24px;
+        /* Slightly larger */
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Screens: Adjust for screens wider than 1200px */
+@media (min-width: 1200px) {
+    .carousel {
+        width: 80vw;
+    }
+
+    .carousel-cta {
+        padding: 15px 30px;
+        /* Larger button for larger screens */
+        font-size: 1.2rem;
+    }
+}
+
+.app-mall {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh auto;
+    padding: 0;
+    width: 80vw;
+    background-color: #f5f5f500;
+    color: #333;
+}
+
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 5%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    color:white;
+    font-size: 2rem;
+}
+
+.app-title {
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.app-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #e0e0e021;
+    position: relative;
+    gap: 5%;
+    width: 90%;
+    margin: 1vh 0;
+    padding: 1vh 0;
+    border-radius: 8px;
+}
+
+.apps-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00699d;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.apps-arrow:hover {
+    background-color: #0998b8;
+}
+
+.apps-arrow:active {
+    background-color: #08c8f3;
+}
+
+.left-arrow {
+    left: -20px;
+}
+
+.right-arrow {
+    right: -20px;
+}
+
+.app-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000a3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    aspect-ratio: 4 / 3;
+    padding: 1rem;
+    margin: 1rem;
+    box-sizing: border-box;
+    max-height: 90%;
+    max-height: 90%;
+    height: 350px;
+}
+
+.app-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    max-height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.app-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-card-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.app-card-button:hover {
+    background-color: #19e420;
+    transform: scale(1.1);
+}
+
+.app-card-button:active {
+    background-color: #0998b8;
+    transform: scale(0.9);
+}

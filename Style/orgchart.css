@@ -1,0 +1,67 @@
+.row1 h1,
+.row2 h1 .row3 h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+.row1 p,
+.row2 p,
+.row3 p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.row1 {
+  margin-top: 2vh;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding-left: 4%;
+}
+
+.photo-container img {
+  width: auto;
+  height: 80vh;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  padding-left: 4%;
+  gap: 3%;
+  overflow: hidden;
+}
+
+.orgbtn {
+  align-items: center;
+  background-color: rgb(18, 87, 81);
+  color: white;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 12%;
+  max-width: 13%;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.orgbtn:hover {
+  background-color: rgb(41, 175, 164);
+  transform: translateY(-2px);
+}
+
+.orgbtn:active {
+  background-color: rgb(18, 87, 81);
+  transform: translateY(2px);
+}
